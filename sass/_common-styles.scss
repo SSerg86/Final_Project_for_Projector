@@ -7,3 +7,20 @@
   font-family: GalienLight;
   src: url(../fonts/OTF/Galien-Light.otf);
 }
+
+%bodytext {
+  font-family: GilroyLight;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+  opacity: 0.6;
+}
+
+%secondtitle {
+    font-family: GilroyLight;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #316099;
+}
