@@ -1,0 +1,47 @@
+.info {
+    width: auto;
+    padding-left: 15.52%;
+    padding-top: 7.4%;
+    padding-bottom: 13.9%;
+    background: url(../../images/pic/header/illustration.png) 97% center/687.25px 579.31px no-repeat ;
+  
+    &__title {
+      max-width: 44.194%;
+      font-family: GalienLight;
+      font-size: 64px;
+      line-height: 74px;
+      letter-spacing: 0.04em;
+      color: #1F3F68;
+    }
+  
+    &__text {
+      font-family: GilroyLight;
+      max-width: 36.83%;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+      color: #1F3F68;
+      opacity: 0.6;
+      text-align: left;
+      margin-top: 2.77%;
+    }
+
+    &__btn {
+        background: #5A98D0;
+        border-radius: 10px;
+        font-family: GilroyLight;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding: 15px 48px;
+        margin-top: 6.15%;
+
+        &:hover {
+            box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        }
+    }
+  }
+
+  

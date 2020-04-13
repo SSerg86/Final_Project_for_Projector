@@ -1,0 +1,11 @@
+@import '../sass/common-styles';
+@import './reset';
+@import '../components/header/header';
+@import '../components/main/main';
+
+
+.main-wrapper {
+  max-width: 1366px;
+  margin: auto;
+}
+

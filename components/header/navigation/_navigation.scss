@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 87.85%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: auto;
+
+
+    &__logo {
+        width: 48px;
+        height: 32px;
+        background: url(../../../images/pic/header/logo.png) no-repeat center;
+    }
+
+    &__list {
+        width: 32px;
+        height: 32px;
+        background: url(../../../images/pic/header/ic_menu.png) no-repeat center;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+

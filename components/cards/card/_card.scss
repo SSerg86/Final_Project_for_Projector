@@ -1,0 +1,51 @@
+.card {
+  text-align: center;
+  width: 335px;
+  padding: 45px 40px 40px 40px;
+
+  &__sticker {
+    background-color: #F2752E;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #202124;
+  }
+
+    &__date {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #202124;
+      mix-blend-mode: normal;
+      opacity: 0.4;
+    }
+
+    &__name {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #202124;
+    }
+}
+
+.card__date-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 223px;
+  margin-left: 37px;
+}
+
