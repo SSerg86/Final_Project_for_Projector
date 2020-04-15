@@ -1,82 +1,35 @@
 @import '../../../sass/common-styles';
+@import './cards/card';
 
-%headline {
-    font-family: GilroyLight;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    color: #1F3F68;
-}
 
 .wedo {
     position: relative;
-    max-width: 71.74%;
+    max-width: 68.8%;
+    height: 1162px;
     margin: auto;
+
+    &__card-one {
+        position: absolute;
+        top: 308px;
+        left: 80px;
+    }
+
+    &__card-two {
+        position: absolute;
+        top: 12px;
+        right: 0px;
+    }
+
+    &__card-three {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
 }
 
 .wedo__title {
-    width: 36.5%;
+    width: 38%;
     @extend %secondtitle;
 }
 
-.wedo__card {
-    position: absolute;
-    left: 80px;
-    top: 308px;
-    background: #FFFFFF;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    padding: 48px;
-
-    &:hover {
-        cursor: pointer;
-        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.3);
-    }
-}
-
-.wedo__img {
-    width: 100%;
-    height: 132px;
-    background: url(../../../images/pic/body/Card1.png) no-repeat left;
-    margin-left: 26px;
-}
-.wedo__body {
-    width: 284px;
-    margin-top: 56px;
-    text-align: left;
-}
-
-.wedo__header {
-    @extend %headline;
-}
-
-.wedo__text {
-    @extend %bodytext;
-    margin-top: 16px;
-    margin-bottom: 32px;
-}
-
-.wedo__link {
-    position: relative;
-    font-family: GilroyLight;
-    font-size: 14px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    color: #5A98D0;
-    margin-top: 32px;
-
-        &:hover {
-         text-decoration: underline;
-        }
-
-    &::after {
-        position: absolute;
-        content: "";
-        width: 16px;
-        height: 16px;
-        left: 107px;
-        bottom: 0;
-        background: url(../../../images/pic/body/link.png) no-repeat center;
-    }
-}
 
