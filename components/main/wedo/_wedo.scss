@@ -3,33 +3,66 @@
 
 
 .wedo {
-    position: relative;
-    max-width: 68.8%;
-    height: 1162px;
+    max-width: 940px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    grid-column-gap: 100px;
 
     &__card-one {
-        position: absolute;
-        top: 308px;
-        left: 80px;
+        grid-row: 1 / 7;
+        justify-self: end;
+
     }
 
     &__card-two {
-        position: absolute;
-        top: 12px;
-        right: 0px;
+        grid-row: 4 / 10;
+        justify-self: end;
+        margin-left: 80px;
+
     }
 
     &__card-three {
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
+        grid-row: 7 / 13;
+        grid-column: 2;
+        justify-self: end;
+        margin-top: 25px;
     }
+
 }
 
 .wedo__title {
-    width: 38%;
     @extend %secondtitle;
+    width: 358px;
+    grid-row: 1;
 }
+
+// .wedo {
+//     position: relative;
+//     max-width: 940px;
+//     height: 1162px;
+//     margin: auto;
+
+//     &__card-one {
+//         position: absolute;
+//         top: 308px;
+//         left: 80px;
+//     }
+
+//     &__card-two {
+//         position: absolute;
+//         top: 12px;
+//         right: 0px;
+//     }
+
+//     &__card-three {
+//         position: absolute;
+//         bottom: 0px;
+//         right: 0px;
+//     }
+// }
+
+
 
 

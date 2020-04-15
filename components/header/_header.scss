@@ -1,9 +1,12 @@
 @import 'navigation/navigation';
 @import 'content/content';
 
-
-.header {
+.wrapper-head {
     width: 100%;
-    padding-top: 40px;
     background-image: linear-gradient(0deg, rgba(152, 195, 232, 0.2), rgba(152, 195, 232, 0) 31.12%);
+}
+.header {
+    width: 1366px;
+    padding-top: 40px;
+    margin: auto;
 }

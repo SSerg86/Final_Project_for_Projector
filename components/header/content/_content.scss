@@ -1,12 +1,12 @@
 .info {
     width: auto;
-    padding-left: 15.52%;
-    padding-top: 7.4%;
-    padding-bottom: 13.9%;
-    background: url(../../images/pic/header/illustration.png) 97% center/687.25px 579.31px no-repeat ;
+    height: 768px;
+    padding-left: 212px;
+    background: url(../../images/pic/header/illustration.png) 97% 50px/700px no-repeat ;
   
     &__title {
-      max-width: 44.194%;
+      max-width: 510px;
+      padding-top: 101px;
       font-family: GalienLight;
       font-size: 64px;
       line-height: 74px;
@@ -16,7 +16,7 @@
   
     &__text {
       font-family: GilroyLight;
-      max-width: 36.83%;
+      max-width: 425px;
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 0.05em;

@@ -1,7 +1,12 @@
 @import './wedo/wedo';
 @import './projects/projects.scss';
 
-.main {
-    padding-top: 14.06%;
+
+.wrapper-main {
     width: 100%;
+}
+.main {
+    padding-top: 192px;
+    width: 1366px;
+    margin: auto;
 }
