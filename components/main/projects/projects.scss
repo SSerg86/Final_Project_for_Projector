@@ -1,0 +1,89 @@
+@import "../../../sass/common-styles";
+
+
+.projects {
+    max-width: 68.8%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 192px;
+}
+
+.projects__head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8.5%;
+}
+
+.projects__title {
+    @extend %h3;
+    color: #1F3F68;
+    width: 24.14%;
+}
+
+.projects__text {
+    @extend %bodytext;
+    width: 57.45%;
+    margin-right: 8.5%;
+}
+
+.projects__banner-group {
+    width: 100%;
+    display: grid;
+    margin-top: 96px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 424px;
+    grid-row-gap: 89px;
+    grid-column-gap: 96px;
+}
+
+.project__first {
+    grid-column: span 2;
+    background: url(../../../images/pic/body/MaskGroup.png) no-repeat center;
+}
+
+.project__second {
+    background: url(../../../images/pic/body/MaskGroup1.png) no-repeat center;
+}
+
+.project__third {
+    background: url(../../../images/pic/body/MaskGroup2.png) no-repeat center;
+}
+
+.projects__banner-title {
+    @extend %h4;
+    color: #FFFFFF;
+    
+    &-top {
+        text-align: right;
+        margin-top: 48px;
+        margin-right: 45px;
+    }
+
+    &-bottomn {
+        margin-top: 24px;
+        margin-left: 32px;
+    }
+}
+
+.projects__banner-text {
+    font-family: GilroyLight;
+    font-size: 16px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.8;
+
+    &-top {
+        text-align: right;
+        margin-top: 8px;
+        margin-right: 45px;
+    }
+
+    &-bottomn {
+        margin-top: 4px;
+        margin-left: 32px;
+    }
+
+}
