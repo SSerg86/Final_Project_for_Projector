@@ -1,12 +1,7 @@
-@import 'navigation/navigation';
-@import 'content/content';
-
+@import '../navigation/navigation';
+@import 'hero/hero';
 .wrapper-head {
-    width: 100%;
+    padding-top: 2.5vw;
+    padding-bottom: 12vw;
     background-image: linear-gradient(0deg, rgba(152, 195, 232, 0.2), rgba(152, 195, 232, 0) 31.12%);
-}
-.header {
-    width: 1366px;
-    padding-top: 40px;
-    margin: auto;
 }

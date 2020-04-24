@@ -1,0 +1,59 @@
+.our_client {
+    max-width: 940px;
+    margin: auto;
+    padding-top: 96px;
+
+
+    .projects__title {
+        color:#FFFFFF ;
+    }
+
+    .projects__text {
+        color: #FFFFFF;
+    }
+}
+
+.our_client__logo {
+    margin: 111px auto 125px auto;
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    grid-auto-flow: row;
+    grid-auto-rows: 128px;
+
+    &-box {
+        font-family: Gilroy;
+        font-size: 20px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #F2F2F2;
+        border: 1px solid rgba(250, 250, 250, 0.4);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 41px;
+
+        &:nth-child(8) {
+            border-right: none;
+            border-bottom: none;
+            background: rgba(31, 63, 104, 0.2);
+            
+        }
+
+        &:nth-child(-n+4) {
+            border-top: none;
+        }
+        &:nth-child(n+5) {
+            border-bottom: none;
+        }
+
+        &:first-child,
+        &:nth-child(5) {
+            border-left: none;
+        }
+
+        &:nth-child(4) {
+            border-right: none;
+        }
+
+    }
+}
