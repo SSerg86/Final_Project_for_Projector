@@ -1,16 +1,18 @@
+@import '../../../sass/common-styles';
+
 .hero {
     max-width: 1200px;
-    padding-top: 3.3%;
     margin: auto;
-}
+    position: relative;
 
-.info {
-    height: 768px;
-    padding-left: 10.83%;
+    &__info {
+      max-width: 510px;
+      padding-left: 10.75%;
+      padding-top: 7.39%;
+    }
+    
   
     &__title {
-      max-width: 510px;
-      padding-top: 101px;
       font-family: GalienLight;
       font-size: 64px;
       line-height: 74px;
@@ -20,32 +22,34 @@
   
     &__text {
       font-family: GilroyLight;
-      max-width: 425px;
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 0.05em;
       color: #1F3F68;
       opacity: 0.6;
       text-align: left;
-      margin-top: 2.77%;
+      margin-top: 6.28%;
+      padding-right: 16.66%;
     }
 
     &__btn {
         background: #5A98D0;
-        border-radius: 10px;
-        font-family: GilroyLight;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-        padding: 15px 48px;
-        margin-top: 6.15%;
+        
+        margin-top: 13.93%;
 
         &:hover {
             box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
         }
-    }
-  }
+      }
 
-  
+    &__img {
+      position: absolute;
+      // right: -50px;
+      // top: 45px;
+      width: 57.27%;
+      transform: translate(82%, -75%);
+      z-index: -1;
+    }
+}
+
+

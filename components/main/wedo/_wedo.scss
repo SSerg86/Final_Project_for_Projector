@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 100px;
-    grid-column-gap: 100px;
 
     &__card-one {
         grid-row: 1 / 7;
@@ -19,7 +18,6 @@
     &__card-two {
         grid-row: 4 / 10;
         justify-self: end;
-        margin-left: 80px;
 
     }
 

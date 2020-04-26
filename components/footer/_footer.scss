@@ -1,9 +1,123 @@
-@import 'our_client/our_client';
+@import '../../sass/common-styles';
 
-.wrapper-bottom {
-    width: 100%;
-    background: #5A98D0;
-    border-radius: 200px 0px 0px 0px;
-    margin-top: 12em;
-    padding-bottom: 125px;
+
+.foot {
+    margin-right: 6vw;
+    margin-top: 125px;
+    padding-top: 91px;
+    padding-bottom: 64px;
+    background: #316099;
+    border-radius: 0px 200px 0px 0px;
+
+    &__pagesize {
+        max-width: 940px;
+        margin: auto;
+        padding-left: 74px;
+    }
+
+
+    &__top {
+        margin: auto;
+        max-width: 860px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__message {
+        max-width: 460px;
+
+        h2 {
+            @extend %h3;
+            color: #FFFFFF;
+        }
+
+        p {
+            @extend %bodytext;
+            color: #FFFFFF;
+            margin-top: 36px;
+        }
+
+    }
+
+    &__btn {
+        background: #5A98D0;
+        padding: 15px 75px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        max-width: 833px;
+        margin: auto;
+        margin-top: 192px;
+        margin-bottom: 64px;
+    }
+
+    &__contacts {
+        max-width: 396px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 33px;
+    }
+
+    &__logo-text {
+        @extend %h4;
+        margin-left: 16px;
+        color: #FFFFFF;
+    }
+
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        span, a {
+            @extend %bodytext;
+            opacity: 1;
+            color: #FFFFFF;
+        }
+
+        a {
+            margin-left: 16px;
+        }
+
+        li:nth-child(n+3) {
+            margin-top: 24px;
+        }
+    }
+
+    &__navlinks {
+        display: inline-block;
+
+        h5 {
+            font-family: GalienLight;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+        }
+
+        a {
+            @extend %bodytext;
+            opacity: 1;
+            color: #FFFFFF;
+        }
+
+        li:nth-child(n+3) {
+            margin-top: 16px;
+        }
+    }
+
+    &__copyright {
+        @extend %bodytext;
+        opacity: 0.4;
+        color: #FFFFFF;
+        padding-left: 46px
+    }
 }

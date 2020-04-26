@@ -32,9 +32,37 @@
   letter-spacing: 0.05em;
 }
 
-%h4 {
+%h4 { 
   font-family: GilroyLight;
   font-size: 28px;
   line-height: 46px;
   letter-spacing: 0.05em;
 }
+
+.btn {
+  border-radius: 10px;
+  font-family: GilroyLight;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  padding: 15px 48px;
+}
+
+img {
+width: 100%;
+}  
+
+.logo {
+  width: 48px;
+  height: 32px;
+  background: url(../images/pic/header/logo.png) no-repeat center;
+}
+
+.logo-light {
+  width: 48px;
+  height: 32px;
+  background: url(../images/pic/logo_light.png) no-repeat center;
+}
+
