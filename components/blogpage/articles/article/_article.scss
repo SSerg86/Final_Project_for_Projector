@@ -1,0 +1,38 @@
+.article-blg {
+    max-width: 859px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+
+}
+
+.article-blg__img {
+            width: 300px;
+            height: 200px;
+            background: url(../../../../images/pic/blogpage/article_img.png) no-repeat center;
+        }
+
+.article-blg__right {
+        display: flex;
+        flex-direction: column;
+        max-width: 539px;
+}
+
+.article__title {
+        font-family: GalienLight;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+    }
+
+.article__text {
+        margin-top: 16px;
+        margin-bottom: 14px;
+        font-family: GilroyLight;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.6)
+    }

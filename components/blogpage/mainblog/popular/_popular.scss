@@ -1,0 +1,80 @@
+@import '../../../shareblock/shareblock';
+@import '../../cards_blog/cards_blog';
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    margin-top: 58px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);;
+
+    &__title-top {
+        font-family: Gilroy;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.04em;
+        color: #356EAD;
+        opacity: 0.8;
+        margin-bottom: 32px;
+    }
+
+    &__title-btm {
+        margin-top: 54px;
+        align-self: flex-end;
+
+        a{
+            
+            font-family: GilroyLight;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #356EAD;
+            opacity: 0.8;
+        }
+    }
+}
+
+.popular__block-frst {
+    display: flex;
+}
+
+.popular__left {
+    max-width: 400px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-header {
+        font-family: GalienLight;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+    }
+    
+    .popular__text {
+        font-family: GilroyLight;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: #000000;
+        opacity: 0.6;
+    }
+   
+}
+
+.popular__right {
+    width: 60%;
+    height: 380px;
+    background: url(../../../../images/pic/blogpage/Pop1.png) no-repeat center;
+}
+
+.popular__block-scnd {
+    margin-top: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

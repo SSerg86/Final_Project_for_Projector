@@ -2,12 +2,24 @@
 
 
 .foot {
+    position: relative;
     margin-right: 6vw;
     margin-top: 125px;
     padding-top: 91px;
     padding-bottom: 64px;
     background: #316099;
     border-radius: 0px 200px 0px 0px;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 81%;
+        position: absolute;
+        top: 391px;
+        background-color: #FFFFFF;
+        opacity: 0.4;
+    }
 
     &__pagesize {
         max-width: 940px;
@@ -48,10 +60,10 @@
     &__info {
         display: flex;
         justify-content: space-between;
-        max-width: 833px;
-        margin: auto;
+        max-width: 737px;
         margin-top: 192px;
         margin-bottom: 64px;
+        padding-left: 46px;
     }
 
     &__contacts {

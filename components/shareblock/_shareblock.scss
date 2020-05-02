@@ -1,0 +1,38 @@
+.shareblock {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 0.6fr 0.2fr 0.2fr;
+    align-items: center;
+}
+
+.shareblock__info {
+    display: flex;
+    flex-direction: column;
+
+    h5,p {
+        font-family: GilroyLight;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+    }
+
+    p {
+        opacity: 0.4;
+        margin-top: 4px; 
+    }
+}
+
+.shareblock__mark{
+    width: 18px;
+    height: 22px;
+    justify-self: end;
+    cursor: pointer;
+}
+.shareblock__share {
+    width: 18px;
+    height: 20px;
+    justify-self: end;
+    cursor: pointer;
+}
+

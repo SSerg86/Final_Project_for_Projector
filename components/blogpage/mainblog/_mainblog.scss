@@ -1,0 +1,9 @@
+@import '../../search/search';
+@import './popular/popular';
+@import '../articles/articles';
+
+.main_pagesize {
+    max-width: 940px;
+    margin: auto;
+    padding-top: 50px;
+}

@@ -49,7 +49,7 @@ gulp.task('sass', function() {
 
 // збірка сторінки з шаблонів
 gulp.task('fileinclude', function() {
-    gulp.src('./pages/index.html')
+    gulp.src('./pages/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'

@@ -1,0 +1,37 @@
+@import '../../../sass/common-styles';
+
+.bl-title {
+    margin-top: 50px;
+    padding: 50px 0 50px 0;
+    background:  url(../../../images/pic/blogpage/Mask_Group.png), linear-gradient(229.51deg, #98D0FC 2.46%, #3481D7 93.24%);
+    background-size: cover;
+
+
+    &__text {
+        max-width: 780px;
+        font-family: GilroyLight;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: rgba(255, 255, 255, 0.4);
+        margin-top: 16px;
+        align-self: center;
+    }
+}
+
+.bl-title__info {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bl-title__header {
+    font-family: GilroyLight;
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+

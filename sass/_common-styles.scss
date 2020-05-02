@@ -66,3 +66,11 @@ width: 100%;
   background: url(../images/pic/logo_light.png) no-repeat center;
 }
 
+@media screen and (min-width:375px) and (max-width: 763px) {
+  .btn {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 6px 24px;
+  }
+}
+

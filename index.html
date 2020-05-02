@@ -6,15 +6,35 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Home Page</title>
 </head>
 <body>
-        <header class="wrapper-head">
-    <section class="navigation">
+        <!-- navigation -->
+
+<section class="navigation">
     <div class="logo"></div>
-    <nav class="navigation__list"></nav>
+    <nav class="tab">
+        <input type="radio" id="tab-list" name="tab-list-group" />
+        <label for="tab-list"><div class="navigation__list"></div></label>
+
+        <div class="close-tab">
+          <input type="radio" id="tab-close" name="tab-list-group" />
+          <label for="tab-close"><div class="navigation__list"></div></label>
+        </div>
+
+        <div class="content">
+            <ul>
+              <li><a href="../../blogpage.html">Blog</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">Menu Item #3</a></li>
+            </ul>
+          </div>
+    </nav>
 </section>
 
+
+
+        <header class="wrapper-head">
     <section class="hero">
     <section class="hero__info">
         <h2 class="hero__title">New Automation Tool for Your Home</h2>
@@ -111,7 +131,7 @@
     <section class="foot__pagesize">
         <section class="foot__top">
             <div class="foot__message">
-                <h2>Interested to work </br> with our team?</h2>
+                <h2>Interested to work <br> with our team?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                     sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim 
@@ -120,12 +140,12 @@
             <button class="foot__btn btn">Let's Talk</button>
         </section>
         <section class="foot__info">
-            <address class="foot__contacts">
+            <section class="foot__contacts">
                 <ul>
-                    <div class="foot__logo">
+                    <li class="foot__logo">
                         <div class="logo-light"></div>
                         <h4 class="foot__logo-text">Afrianska</h4>
-                    </div>
+                    </li>
                     <li>
                         <span>A.</span>
                         <a href="#">Address information</a> 
@@ -138,10 +158,12 @@
     
                     <li>
                         <span>E</span>
-                        <a href="#">hello.afrian@gmail.com</a>
+                        <address style="display: inline-block;">
+                            <a href="#">hello.afrian@gmail.com</a>
+                        </address>
                     </li>
                 </ul>
-            </address>
+            </section>
             <section class="foot__navlinks">
                 <ul>
                     <li>
@@ -182,7 +204,7 @@
             </section>
         </section>
         <span class="foot__copyright">
-            2019 &copy Afrianska. All rights reserved
+            2019 &copy; Afrianska. All rights reserved
         </span> 
     </section>
     
