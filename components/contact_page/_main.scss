@@ -1,0 +1,17 @@
+@import './info/info';
+@import './form/c_form';
+
+.contact-main {
+    max-width: 940px;
+    margin: auto;
+    padding-top: 57px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.map {
+    margin: 96px auto;
+    max-width: 940px;
+    height: 480px;
+}
