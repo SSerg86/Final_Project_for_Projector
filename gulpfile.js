@@ -11,7 +11,8 @@ const gulp = require('gulp'),
     spritesmith = require('gulp.spritesmith'),
     autoprefixer = require('gulp-autoprefixer'),
     fileinclude = require('gulp-file-include'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    replace = require('gulp-replace');
 
 // запуск сервера
 gulp.task('server', function() {
@@ -39,21 +40,24 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(
             sass({ outputStyle: 'expanded' })
-                .on('error', gutil.log)
+            .on('error', gutil.log)
         )
         .on('error', notify.onError())
         .pipe(sourcemaps.write())
+        .pipe(replace(/\(.*\/images/g, '(../images'))
         .pipe(gulp.dest('./css/'))
         .pipe(browserSync.stream());
 });
 
 // збірка сторінки з шаблонів
 gulp.task('fileinclude', function() {
-    gulp.src('./pages/*.html')
+    gulp.src('./pages/**/*.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
         }).on('error', gutil.log))
+        .pipe(replace('../css', './css'))    
+        .pipe(replace(/".*\/images/g, '"./images'))
         .on('error', notify.onError())
         .pipe(gulp.dest('./'))
 });
@@ -107,11 +111,20 @@ gulp.task('sprite', function() {
     return merge(imgStream, cssStream);
 });
 
+// публікація на gh-pages
+gulp.task('deploy', function() {
+    return gulp.src('./public/**/*').pipe(ghPages());
+});
+
 // при виклику в терміналі команди gulp, буде запущені задачі
 // server - для запупуску сервера,
 // sass - для компіляції sass в css, тому що браузер
 // не розуміє попередній синтаксис,
 // fileinclude - для того щоб з маленьких шаблонів зібрати повну сторінку
 gulp.task('default', ['server', 'sass', 'fileinclude'])
+
+// при виклику команди gulp production
+// будуть стиснуті всі ресурси в папку public
+// після чого командою gulp deploy їх можна опублікувати на github
 gulp.task('production', ['minify:html', 'minify:css', 'minify:img']);
 
