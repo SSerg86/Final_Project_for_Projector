@@ -1,0 +1,70 @@
+@import '../../../sass/common-styles';
+@import './cards/card';
+
+
+
+// @media screen and (min-width: 769px) {
+
+
+.our-work {
+    max-width: 940px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+}
+
+.our-work__card-one {
+        grid-row: 1 / 7;
+        justify-self: end;
+
+}
+
+.our-work__card-two {
+        grid-row: 4 / 10;
+        justify-self: end;
+
+}
+
+.our-work__card-three {
+        grid-row: 7 / 13;
+        grid-column: 2;
+        justify-self: end;
+        margin-top: 25px;
+}
+
+.our-work__title {
+    font-family: GilroyLight;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #316099;
+    max-width: 358px;
+    grid-row: 1;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .our-work {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-work__title {
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .our-work__card-one {
+        margin: 40px auto 10px auto;
+    }
+    .our-work__card-two,
+    .our-work__card-three {
+        margin: 10px auto;
+        
+    }
+}
+
+

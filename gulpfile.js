@@ -27,7 +27,6 @@ gulp.task('server', function() {
 
 
     gulp.watch([
-        './templates/**/*.html',
         './pages/**/*.html'
     ], ['fileinclude']);
 

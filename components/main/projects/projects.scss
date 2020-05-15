@@ -12,20 +12,37 @@
 .projects__head {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-right: 8.5%;
 }
 
 .projects__title {
     @extend %h3;
     color: #1F3F68;
-    width: 24.14%;
+    width: 24.15%;
 }
 
 .projects__text {
     @extend %bodytext;
-    width: 57.45%;
+    flex: 1;
     margin-right: 8.5%;
+    margin-left: 9.9%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .projects__head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects__title {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .projects__text {
+        margin-top: 25px;
+    }
 }
 
 .projects__banner-group {
@@ -53,18 +70,19 @@
 .projects__banner-title {
     @extend %h4;
     color: #FFFFFF;
+}
     
-    &-top {
+.projects__banner-title-top {
         text-align: right;
         margin-top: 48px;
         margin-right: 45px;
     }
 
-    &-bottomn {
+.projects__banner-title-bottomn {
         margin-top: 24px;
         margin-left: 32px;
     }
-}
+
 
 .projects__banner-text {
     font-family: GilroyLight;
@@ -73,16 +91,16 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     opacity: 0.8;
+}
 
-    &-top {
+.projects__banner-text-top {
         text-align: right;
         margin-top: 8px;
         margin-right: 45px;
     }
 
-    &-bottomn {
+.projects__banner-text-bottomn {
         margin-top: 4px;
         margin-left: 32px;
     }
 
-}

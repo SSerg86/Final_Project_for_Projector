@@ -1,5 +1,16 @@
+@import '../navigation/navigation';
 @import 'hero/hero';
-.wrapper-head {
+.header {
     padding-bottom: 12vw;
     background-image: linear-gradient(0deg, rgba(152, 195, 232, 0.2), rgba(152, 195, 232, 0) 31.12%);
+}
+
+.header__top {
+    padding-top: 2.5vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1010px) {
+    .header__content {
+        padding: 0 10px;
+    }
 }
