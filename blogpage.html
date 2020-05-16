@@ -9,7 +9,10 @@
     <title>Blog</title>
 </head>
 <body>
-    <!-- navigation start -->
+    <!-- HEADER section  -->
+<header class="header-blg">
+    <div class="header-blg__top">
+         <!-- navigation start -->
 <section class="navbar">
     <div class="logo">
       <a class="logo__link" href="./index.html">
@@ -47,14 +50,20 @@
 
 
 
-    <section class="bl-title">
+    </div>
+    <div class="header-blg__content">
+         <section class="bl-title">
     <div class="bl-title__info">
         <h1 class="bl-title__header">Blog Afrianska</h1>
         <p class="bl-title__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
 </section>
-    <section class="main_pagesize">
+    </div>
+ </header>
+    <main>
+    <div class="container">
+        <section class="main_pagesize">
             <div class="search-bar">
     <form type="text">
         <input type="text" placeholder="Search Article">
@@ -63,11 +72,15 @@
             <section class="popular">
         <p class="popular__title-top">POPULAR</p>
         <section class="popular__block-frst">
-            <div class="popular__left">
-                <h2 class="popular__left-header">Feugiat sodales at nullam tellus.</h2>
-                <p class="popular__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            <div class="popular__info">
+                <h2 class="popular__info-header">
+                    Feugiat sodales at nullam tellus.
+                </h2>
+                <p class="popular__info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                     Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
+                     Mi posuere nibh tempor fringilla porta pellentesque ipsum.
+                    </p>
                  <section class="shareblock">
     <div class="shareblock__info">
         <h5>Samantha Leuthex</h5>
@@ -77,7 +90,9 @@
     <div class="./images/pic/icon/Share.png" alt=""> </div>
 </section>     
             </div>
-            <div class="popular__right"></div>
+            <div class="popular__img">
+                <img  src="./images/pic/blogpage/Pop1.png" alt="img">
+            </div>
         </section>
         <section class="popular__block-scnd">
             <section class="card-blg">
@@ -126,7 +141,9 @@
         <p class="popular__title-btm"><a href="#">See All Popular Article</a></p>
 </section>
             <section class="articles">
-    <p class="articles__title">ALL ARTICLE</p>
+    <p class="articles__title">
+        ALL ARTICLE
+    </p>
     <section class="article-blg">
     <div class="article-blg__img"></div>
     <section class="article-blg__right">
@@ -208,14 +225,19 @@
     </section>
 </section>
     <section class="articles__pagination">
-        <div class="articles__pagination-left">New Post</div>
+        <div class="articles__pagination-left">
+            New Post
         </div>
         <div class="articles__pagination-right">
-            <div class="articles__pagination-text">Old Post</div>
+                Old Post
         </div>
     </section>
 </section>
-</section>
+        </section>
+    </div>
+</main>
+
+
     <footer class="foot">
     <div class="container">
         <div class="foot__inner">

@@ -136,6 +136,12 @@
     }
 }
 
+// @media screen and (min-width: 505px) and (max-width: 744px) {
+//     .foot__info {
+//         align-items: flex-end;
+//         justify-content: space-around;
+//     }
+// }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .foot__btn {
         margin-top: 25px;
@@ -162,7 +168,7 @@
             height: 1px;
             width: 100%;
             position: absolute;
-            top: 40%;
+            top: 42%;
             background-color: #FFFFFF;
             opacity: 0.4;
         }
@@ -177,11 +183,19 @@
         }
     }
 
-    .foot__navlinks {
-        margin: 50px 50px 0 0;
+    .foot__info {
+        padding-left: 0;
     }
+
+    
 
     .foot__btn {
         margin: 35px auto 0;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .foot__navlinks {
+        margin-top: 40px;
     }
 }

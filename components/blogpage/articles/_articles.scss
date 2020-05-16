@@ -68,3 +68,12 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and  (max-width: 920px){
+    .articles__title {
+        text-align: center;
+    }
+    .articles__pagination {
+        justify-content: space-evenly;
+    }
+}
