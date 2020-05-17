@@ -8,12 +8,9 @@
     background: #FFFFFF;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
-    margin-left: auto;
-
     
-
     &__title {
-        font-family: GilroyLight;
+        font-family: 'GilroyLight';
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 0.04em;
@@ -37,7 +34,7 @@
         border: 1px solid #356EAD;
         box-sizing: border-box;
         border-radius: 10px;
-        font-family: GilroyLight;
+        font-family: 'GilroyLight';
         font-size: 16px;
         line-height: 30px;
         letter-spacing: 0.04em;
@@ -50,13 +47,12 @@
     }
 
     textarea {
-        // height: 144px;
         padding-top: 21px;
 
     }
 
     label{ 
-        font-family: GilroyLight;
+        font-family: 'GilroyLight';
         font-size: 16px;
         line-height: 30px;
         letter-spacing: 0.04em;

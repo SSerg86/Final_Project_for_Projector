@@ -2,16 +2,25 @@
 @import './form/c_form';
 
 .contact-main {
-    max-width: 940px;
-    margin: auto;
-    padding-top: 57px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 57px;
+}
 
+@media screen and (max-width: 860px){
+    .contact-main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .map {
     margin: 96px auto;
     max-width: 940px;
-    height: 480px;
+    max-height: 480px;
+
+    img {
+        width: 100%;
+    }
 }
