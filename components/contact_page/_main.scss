@@ -14,13 +14,18 @@
         align-items: center;
     }
 }
-
-.map {
-    margin: 96px auto;
-    max-width: 940px;
-    max-height: 480px;
-
-    img {
+@media screen and (min-width: 741px) {
+    .map {
+        margin: 96px  0 auto;
         width: 100%;
+        min-height: 480px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 740px) {
+    .map {
+        margin: 70px auto;
+        width: 100%;
+        min-height: 280px;
     }
 }

@@ -5,7 +5,6 @@
     background: #5A98D0;
     border-radius: 200px 0px 0px 0px;
     margin-top: 12em;
-    // padding-bottom: 125px;
 }
 
 .our_client {
@@ -27,20 +26,23 @@
     grid-auto-rows: 128px;
 
     &-box {
-        // font-family: 'GilroyLight';
-        font-size: 20px;
-        line-height: 46px;
-        letter-spacing: 0.02em;
-        color: #F2F2F2;
+        
         border: 1px solid rgba(250, 250, 250, 0.4);
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 41px;
+        
 
         &:nth-child(8) {
             border-right: none;
             border-bottom: none;
             background: rgba(31, 63, 104, 0.2);
+            a {
+                display: block;
+                font-size: 20px;
+                line-height: 46px;
+                letter-spacing: 0.02em;
+                color: #F2F2F2;
+                text-align: center;
+                margin-top: 41px;
+            }
             
         }
 
