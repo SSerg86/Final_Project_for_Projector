@@ -25,7 +25,7 @@
     "gulp-util": "^3.0.6",
     "gulp.spritesmith": "^6.2.1",
     "merge-stream": "^1.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "spritesmith": "^3.1.0"
   },
   "dependencies": {}
